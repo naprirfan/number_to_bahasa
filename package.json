@@ -1,0 +1,17 @@
+{
+  "name": "number_to_bahasa",
+  "version": "1.0.0",
+  "description": "A Javascript converter from arbitrary number to Indonesian Language (Bahasa).",
+  "main": "dist/ntb.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Javascript"
+  ],
+  "author": "Muhammad Irfan",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt-contrib-uglify": "^1.0.1"
+  }
+}
