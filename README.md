@@ -30,8 +30,8 @@ If you haven't install bower yet, [follow this instruction](http://bower.io/#ins
 
 ##Contributing
 
-Please fork this repo and send me pull request.
+Please fork this repo and send me [pull request](https://github.com/naprirfan/number_to_bahasa/pulls).
 
 ##Issues
 
-If you find any bugs, or you have some feature in mind, Let me know by creating an issue. 
+If you find any bugs, or you have some feature in mind, Let me know by creating an [issue](https://github.com/naprirfan/number_to_bahasa/issues). 
