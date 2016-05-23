@@ -18,15 +18,21 @@ If you haven't install bower yet, [follow this instruction](http://bower.io/#ins
 
 ###Direct usage
 
-....
+copy `/dist/ntb.min.js` file and use it however you want.
 
 ##Usage
 
-- NumberToBahasa.parse(100) returns `seratus`
-- NumberToBahasa.parse(1000) returns `seribu`
-- NumberToBahasa.parse(10000) returns `sepuluh ribu`
+var NTB = new NumberToBahasa();
+- NTB.parse(100) returns `seratus`
+- NTB.parse(1000) returns `seribu`
+- NTB.parse(10000) returns `sepuluh ribu`
 
-...etc
+Usage with decimals :
+
+- NTB.parse(100.2345) returns `seratus koma dua tiga empat lima`
+- NTB.parse(23,2341) returns `dua puluh tiga koma dua tiga empat satu`
+
+See `demo.html` for demo (duh!).
 
 ##Contributing
 

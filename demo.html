@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Title of the document</title>
+<title>Number to Bahasa</title>
 </head>
 
 <body>
 
 <form onSubmit="event.preventDefault(); parse()">
-	<input type="number" id="number" />
+	<input type="number" step="0.001" id="number" />
 	<input type="submit" value="Parse" />
 </form>
 <div id="result"></div>
 
-<script type="text/javascript" src="src/num_to_bahasa.js"></script>
+<script type="text/javascript" src="dist/ntb.min.js"></script>
 <script>
 function parse() {
 	var ntb = new NumberToBahasa();

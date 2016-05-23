@@ -26,6 +26,8 @@
 	};
 
 	const bahasaMap = {
+		"." : "koma",
+		"," : "koma",
 		"1" : "se",
 		"2" : "dua",
 		"3" : "tiga",
@@ -41,20 +43,51 @@
 
 	}
 
+	function isNumeric(n) {
+  		return !isNaN(parseFloat(n)) && isFinite(n);
+	}
+
 	NumberToBahasa.prototype.parse = function(number) {
-		//todo : implement validation
+
+		if (!isNumeric(number)) return "Input is not a number";
+		
 		var str = number + "";
 		var arr = str.split("");
 
+		//if number is too big
+		if (number > 9999999999999999) {
+			return "number is too big";
+		}
+
 		var result = "";
 		var index = 0;
+		var isDecimal = false;
 		for (var i = arr.length - 1; i >= 0; i--) {
+			if (bahasaMap[arr[index]] == "koma") {
+				isDecimal = true;
+				index++;
+				result += "koma ";
+				break;
+			}
+
 			if (arr[index] == "0") {
 				index++;
 				continue;
 			}
-			result += ((arr[index] == "1" ? bahasaMap[arr[index]] : bahasaMap[arr[index]] + " ") + numOfDigitsMap[i + 1] + " ");
-			index++;
+			//special, case
+			if (i === 0 && arr[index] == "1") {
+				result += "satu";
+			}
+			else {
+				result += ((arr[index] == "1" ? bahasaMap[arr[index]] : bahasaMap[arr[index]] + " ") + numOfDigitsMap[i + 1] + " ");
+				index++;	
+			}
+		}
+
+		if (isDecimal) {
+			for (var i = index; i < arr.length; i++) {
+				result += ((bahasaMap[arr[i]] == "se" ? "satu" : bahasaMap[arr[i]])+ " ");
+			}
 		}
 
 		return result;
