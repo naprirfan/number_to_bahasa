@@ -1,0 +1,21 @@
+{
+  "name": "number_to_bahasa",
+  "version" : "0.0.2",
+  "description": "A Javascript converter from arbitrary number to Indonesian Language (Bahasa).",
+  "main": "dist/ntb.min.js",
+  "authors": [
+    "Muhammad Irfan"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "Javascript"
+  ],
+  "homepage": "https://github.com/naprirfan/number_to_bahasa",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
