@@ -32,7 +32,7 @@ Usage with decimals :
 - NTB.parse(100.2345) returns `seratus koma dua tiga empat lima`
 - NTB.parse(23,2341) returns `dua puluh tiga koma dua tiga empat satu`
 
-See `demo.html` for demo (duh!).
+See `demo.html` to see usage example
 
 ##Contributing
 
